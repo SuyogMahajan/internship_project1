@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hapticFeedbackEnabled="true"
+        app:cardElevation="25dp"
+        android:padding="5dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="#BFBFBF"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suyog Mahajan"
+                android:id="@+id/ContactName"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="start"
+                android:layout_margin="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+91 9322559508"
+                android:id="@+id/ContactNumber"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:textSize="15sp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="start"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buisness"
+                android:id="@+id/Category"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_gravity="start"
+                android:layout_margin="10dp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:background="@drawable/card_background"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
